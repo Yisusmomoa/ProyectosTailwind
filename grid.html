@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<body class="container mx-auto mt-5 text-center">
+    
+     <!-- grid sencillo de 3 columnas y 1 fila-->
+    <div class="grid grid-cols-3 gap-4 my-2 hover:gap-y-3">
+        <div class="bg-red-400">R</div>
+        <div class="bg-green-400">G</div>
+        <div class="bg-blue-400">B</div>
+
+        <div class="bg-pink-400">P</div>
+        
+    </div>
+
+
+     <!-- grid responsive -->
+    <!-- grid-cols-1 dispositivo muy pequeño  -->
+    <!-- grid-cols-12 dispositivo md -->
+    <div class=" grid  mt-10 grid-cols-1 sm:grid-cols-3 md:grid-cols-12">
+        <div class="bg-red-400">R</div>
+        <div class="bg-green-400">G</div>
+        <div class="bg-blue-400">B</div>
+    </div>
+
+
+    <!-- grid column span -->
+    <!-- grid-cols-1 dispositivo muy pequeño  -->
+    <!-- grid-cols-12 dispositivo md -->
+    <div class=" grid mt-10 grid-cols-4">
+        <div class="bg-red-700 col-span-3">R</div>
+        <div class="bg-green-700">G</div>
+        <div class="bg-blue-700 col-span-3">B</div>
+        <div class="bg-yellow-700 col-span-4">Y</div>
+    </div>
+
+    <!-- distribuir en 12 columnas -->
+    <div class="grid mt-12 gap-1 grid-cols-12">
+        <div class="bg-orange-500">A</div>
+        <div class="bg-orange-500">A</div>
+        <div class="bg-orange-500">A</div>
+        <div class="bg-orange-500">A</div>
+        <div class="bg-orange-500">A</div>
+        <div class="bg-orange-500">A</div>
+        <div class="bg-orange-500">A</div>
+        <div class="bg-orange-500">A</div>
+        <div class="bg-orange-500">A</div>
+        <div class="bg-orange-500">A</div>
+        <div class="bg-orange-500">A</div>
+        <div class="bg-orange-500">A</div>
+    </div>
+
+    <div class="grid mt-12 gap-1 grid-cols-12">
+        <div class="bg-orange-500 col-span-4">A</div>
+        <div class="bg-orange-500 col-span-4">A</div>
+        <div class="bg-orange-500 col-span-4">A</div>
+    </div>
+
+    <!-- col start y col end -->
+        <div class="grid mt-12 gap-1 grid-cols-4">
+            <div class="bg-emerald-500 col-span-4 col-start-2">A</div>
+            <div class="bg-emerald-800 col-start-1 col-end-2">A</div>
+            <div class="bg-emerald-300 col-span-2">A</div>
+        </div>
+
+        <div class="grid mt-12 gap-1 grid-cols-4">
+            <div class="bg-emerald-500 col-start-2 col-end-5">A</div>
+            <div class="bg-emerald-800 ">A</div>
+            <div class="bg-emerald-300 ">A</div>
+        </div>
+    <!-- col start y col end -->
+
+    <!-- grid template rows -->
+    <div class="grid mt-10 grid-rows-4 gap-4 mb-10">
+        <div class="bg-orange-500 row-span-2">A</div>
+        <div class="bg-orange-500 col-start-1 col-end-2">A</div>
+        <div class="bg-orange-500 col-span-2">A</div>
+        <div class="bg-orange-500">A</div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

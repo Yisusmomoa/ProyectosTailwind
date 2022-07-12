@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+</head>
+
+<body>
+    <div class="bg-gradient-to-r from-indigo-500 to-indigo-300 ">
+        <header class="flex flex-col mx-auto items-center pt-10 text-white">
+            <h1 class="text-2xl">freeCodeCamp Survey Form</h1>
+            <p class="text-lg">Thank you for taking the time to help us improve the platform</p>
+        </header>
+       
+        <form class="container bg-slate-800/75 
+                mx-auto mt-5 text-white w-4/12 p-3 
+                flex flex-col items-center rounded-sm">
+            <div class="flex flex-col mt-5">
+                <label for="idInputName">Name</label>
+                <input class="flex-initial w-96 " type="text" name="" id="idInputName" placeholder="Enter your name">
+            </div>
+
+            <div class="flex flex-col mt-5">
+                <label for="idInputEmail">Email</label>
+                <input class="flex-initial w-96 " type="text" name="" id="idInputEmail" placeholder="Enter your email"> 
+            </div>
+            <div class="flex flex-col mt-5">
+                <label for="idInputAge">Age(optional)</label>
+                <input class="flex-initial w-96 " type="number" name="" id="idInputAge" placeholder="Enter your email"> 
+            </div>
+            <div class="flex flex-col mt-5">
+                <label for="cbrol">Which option best describes your current role?</label><br>
+                <select name="" id="cbrol" class="flex-initial w-96 text-black">
+                    <option value="value1" selected disabled>Select current role</option>
+                    <option value="value1">Student</option>
+                    <option value="value1">Full time job</option>
+                    <option value="value1">Full time learner</option>
+                    <option value="value1">Prefer not to say</option>
+                    <option value="value1">Other</option>
+    
+                </select>
+            </div>
+            <div class="w-96 mt-5 ">
+                <label for="idInputAge">Would you recommend freeCodeCamp to a friend?</label><br>
+                <div id="idInputAge">
+                    <input type="radio" name="recommend" id="">
+                        <label for="age1">Definitely</label><br>
+                    <input type="radio" name="recommend" id="">
+                        <label for="age1">Maybe</label><br>
+                    <input type="radio" name="recommend" id="">
+                        <label for="age1">Not sure</label><br>
+                </div>
+            </div>
+            <div class="w-96 mt-5">
+                <label > What would you like to see improved? (Check all that apply)</label><br>
+               
+                <input type="checkbox" id="Front-end" name="Front-end" value="Front-end ">
+                    <label for="Front-end"> Front-end Projects</label><br>
+                <input type="checkbox" id="Back-end" name="Back-end" value="Back-end">
+                    <label for="Back-end"> Back-end Projects</label><br>
+                <input type="checkbox" id="Visualization" name="Visualization" value="Visualization">
+                    <label for="Visualization"> Data Visualization</label><br>
+                <input type="checkbox" id="Challenges" name="Challenges" value="Challenges">
+                    <label for="Challenges"> Challenges</label><br>
+                <input type="checkbox" id="OpenSource" name="OpenSource" value="OpenSource">
+                    <label for="OpenSource"> Open Source Community</label><br>
+            </div>
+            <div class="w-96 mt-5">
+                <label > Any comments or suggestions?</label><br>
+                <textarea class="w-full" name="" id="" cols="30" rows="5"></textarea>
+            </div>
+            <div class="w-96 mt-5">
+                <input type="submit" class="w-full bg-green-500 p-2 cursor-pointer hover:bg-green-800"  value="submit">
+            </div>
+        </form>
+    </div>
+ 
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
